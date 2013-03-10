@@ -11,6 +11,7 @@ function trackEng(name,value){
 	// generate pseudo e-commerce trans
 	var orderNum = getOrderID();
 	var value=value || 1
+	_gaq.push(['_clearTrans']);
 	_gaq.push(['_addTrans', orderNum, '', String(value), '', '','','','']);
 	_gaq.push(['_addItem', orderNum, document.location.pathname+'--'+name, name, '', '', String(value), '1']);
 	_gaq.push(['_trackTrans']);
