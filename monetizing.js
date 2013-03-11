@@ -7,7 +7,7 @@ function getOrderID(){
 	var timeStamp = current.getFullYear() +month +current.getDate() + '-' +current.getHours() + current.getMinutes()+ current.getSeconds() +'-' + randomnumber;
 	return(timeStamp);
 }
-function trackEng(name,value){
+function trackEC(name,value){
 	// generate pseudo e-commerce trans
 	var orderNum = getOrderID();
 	var value=value || 1
